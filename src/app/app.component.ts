@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Task } from './models/task.model';
+import { Task } from './models/task.component';
 
 @Component({
   selector: 'geronimo',
@@ -9,6 +9,8 @@ import { Task } from './models/task.model';
 export class AppComponent {
   title = 'your app!';
   currentFocus: string = 'Angular Homework!';
+
+
   currentTime = new Date();
   month: number = this.currentTime.getMonth() + 1;
   day: number = this.currentTime.getDate();
